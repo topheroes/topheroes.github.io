@@ -1,4 +1,57 @@
 
+
+
+.preloader{
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+  
+  transition: 1s all;
+  opacity: 1;
+  visibility: visible;  
+}
+
+.done{
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+.loader{
+
+
+  width: 75px;
+  height: 75px;
+  border: 10px solid white;
+  border-radius: 50%;
+  border-top-color: transparent;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  animation: 1s spin infinite linear;
+
+}
+
+@keyframes spin{
+
+
+from{
+
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+to{
+
+  transform: translate(-50%,-50%) rotate(360deg);
+}
+
+}
+
+
 body{
 
 
