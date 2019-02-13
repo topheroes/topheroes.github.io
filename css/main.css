@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600&subset=cyrillic,cyrillic-ext');
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.preloader
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+}
+
+.done 
+{
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.loader 
+{
+    width: 75px;
+    height: 75px;
+    border: 10px solid #FFF;
+    border-radius: 50%;
+    border-top-color: transparent;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: 1s spin infinite linear;
+}
+
+@keyframes spin
+{
+    from
+    {
+
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    to
+    {
+
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.container
+{
+    width: fit-content;
+    
+    margin: 0 auto;
+}
+
+.main
+{    
+    height: auto;
+    width: fit-content;
+    
+    margin-top: 32px;
+    margin-left: 32px;
+}
+
+.title
+{
+    background-color: #00AAFF;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.title h1
+{
+    display: block;
+    
+    color: #444;
+    
+    font-size: 32px;
+    font-weight: bolder;
+    
+    text-align: center;
+}
+
+.title span
+{
+    display: block;
+    
+    color: #444;
+    
+    font-size: 14px;
+    font-weight: lighter;
+    
+    text-align: center;
+}
+.table-top
+{
+    display: block;
+    padding-right: 32px;
+    
+    background-color: #00AAFF;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+table
+{
+    max-width: 512px;
+}
+
+.row
+{
+    border-top: 1px solid #000;
+}
+
+.place
+{
+    min-width: 40px;
+    max-width: 40px;
+    
+    padding: 0 32px;
+    
+    font-size: 32px;
+    font-weight: bolder;
+    
+    text-align: center;
+}
+
+.name
+{
+    min-width: 220px;
+    max-width: 220px;
+    padding: 0 32px;
+    
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.done
+{
+    min-width: 40px;
+    max-width: 40px;
+    
+    padding: 0 32px;
+    
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.avatar img
+{
+    border-radius: 6px;
+}
