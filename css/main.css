@@ -21,6 +21,10 @@
 }
 
 
+
+
+
+
 .loader{
 
 
@@ -52,10 +56,19 @@ to{
 }
 
 
+.neon-wrapper{
+
+
+}
+
+
+
+
+
 body{
 
 
-background-color: rgba(1, 1, 255, 0.5 );
+
 background-color: #4169E1;
 color: white;
 
